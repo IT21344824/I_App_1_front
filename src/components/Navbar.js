@@ -5,19 +5,14 @@ import { NavLink, useNavigate } from 'react-router-dom';
 const Navbar = () => {
 
   const navigate = useNavigate();
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-
-    navigate('/register');
-  };
-
+ 
 
 
   return (
@@ -35,17 +30,15 @@ const Navbar = () => {
               <div className="flex items-center ms-3">
                 <div className='flex items-center justify-center gap-2'>
                   <ThemeBtn />
-                  <button type="button" className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                    <img className="w-8 h-8 rounded-full bg-white" src="/profile.png" alt="user photo" />
-                  </button>
-                  <button onClick={handleLogout}>
-                    logout
-                  </button>
-                  <NavLink to={`/profile`}>
-                            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> profile </a>
 
-                        </NavLink>
-                  
+                  <NavLink to={`/profile`}>
+                    <button type="button" className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                      <img className="w-8 h-8 rounded-full bg-white" src="/profile.png" alt="user photo" />
+                    </button>
+                  </NavLink>
+
+                
+
                 </div>
               </div>
             </div>

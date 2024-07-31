@@ -14,8 +14,11 @@ const Profile_pg = () => {
                         "Authorization": `Bearer ${token}`,
                     },
                 });
+
+                console.log(response)
                 const result = await response.json();
                 setUser(result);
+                console.log(result)
             } catch (error) {
                 console.error(error.message);
             }
@@ -33,7 +36,7 @@ const Profile_pg = () => {
     }
 
     return (
-        <div>
+        <div className='mt-8'>
             <h1>Profile Page</h1>
             <p>First Name: {user.firstname}</p>
             <p>Last Name: {user.lastname}</p>
