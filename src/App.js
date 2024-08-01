@@ -12,6 +12,11 @@ import Regiser_Page from './pages/Users/Register_pg';
 import SignIn_Page from './pages/Users/SignIn_pg';
 import Profile_pg from './pages/Users/Profile_pg';
 
+
+import Uploads_pg from './pages/Uploads/Upload_pg';
+
+
+// requiring authentication
 const RequireAuth = ({ children }) => {
   const token = localStorage.getItem('token');
   return token ? children : <Navigate to="/SignIn" replace={true} />;
@@ -47,6 +52,7 @@ function App() {
           }>
             <Route index element={<ProductslistPG />} />
             <Route path="profile" element={<Profile_pg />} />
+            <Route path="uploads" element={<Uploads_pg />} />
             <Route path="add" element={<AddProdcut_Page />} />
             <Route path="edit/:id" element={<EditProdcut_Page />} />
           </Route>
