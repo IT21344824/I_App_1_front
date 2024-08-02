@@ -52,41 +52,41 @@ const Regiser_comp = () => {
     return (
         <div>
 
-            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                    {/* <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" /> */}
-                    <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign Up</h2>
+            <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                    {/* <img className="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" /> */}
+                    <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign Up</h2>
                 </div>
 
-                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form class="space-y-6" method="POST">
+                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                    <form className="space-y-6" method="POST">
                         <div className='flex justify-between gap-5'>
                             <div className='w-full'>
-                                <label for="firstname" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
-                                <div class="mt-2">
-                                    <input id="firstname" name="firstname" type="firstname" autocomplete="firstname" required
+                                <label htmlFor="firstname" className="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                                <div className="mt-2">
+                                    <input id="firstname" name="firstname" type="firstname" autoComplete="firstname" required
                                         value={formData.firstname}
                                         onChange={handleInputChange}
-                                        class=" pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className=" pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className='w-full'>
-                                <label for="lastname" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
-                                <div class="mt-2">
-                                    <input id="lastname" name="lastname" type="lastname" autocomplete="lastname" required
+                                <label htmlFor="lastname" className="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                                <div className="mt-2">
+                                    <input id="lastname" name="lastname" type="lastname" autoComplete="lastname" required
                                         value={formData.lastname}
                                         onChange={handleInputChange}
-                                        class="pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <label for="email" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
                             <div className="mt-2">
-                                <input id="email" name="email" type="email" autocomplete="email" required
+                                <input id="email" name="email" type="email" autoComplete="email" required
                                     value={formData.email}
                                     onChange={handleInputChange}
                                     className="pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -95,9 +95,9 @@ const Regiser_comp = () => {
                         </div>
 
                         <div>
-                            <label for="password" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                            <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
                             <div className="mt-2">
-                                <input id="password" name="password" type="password" autocomplete="current-password" required
+                                <input id="password" name="password" type="password" autoComplete="current-password" required
                                     value={formData.password}
                                     onChange={handleInputChange}
                                     className="pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -106,9 +106,9 @@ const Regiser_comp = () => {
                         </div>
 
                         {/* <div>
-                            <label for="confirmPassword" className="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
+                            <label htmlFor="confirmPassword" className="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
                             <div className="mt-2">
-                                <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="confirmPassword" required className="pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                <input id="confirmPassword" name="confirmPassword" type="password" autoComplete="confirmPassword" required className="pl-2 pr-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  value={formData.firstname}/>
                             </div>
                         </div> */}
@@ -119,13 +119,13 @@ const Regiser_comp = () => {
                         </div>
                     </form>
 
-                    <p className="mt-10 text-center text-sm text-gray-500">
+                    <div className="mt-10 text-center text-sm text-gray-500">
                         All ready have an account?
-                        <NavLink to={`/SignIn`} className="ml-2 font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-                             Sign In 
+                        <NavLink to={`/SignIn`}>
+                            <p  className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign In </p>
 
                         </NavLink>
-                    </p>
+                    </div>
                 </div>
             </div>
 
