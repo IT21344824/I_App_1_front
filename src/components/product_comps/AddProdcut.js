@@ -12,7 +12,7 @@ const AddProduct_Page = () => {
         quantity: '',
         description: '',
     };
-
+    
     const handleSubmit = async (values) => {
         try {
             const res = await axios.post("http://localhost:5000/products/add", values);

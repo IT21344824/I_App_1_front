@@ -154,7 +154,7 @@ const Productlist = () => {
   ];
 
   const options = {
-    selectableRows: false,
+    selectableRows: 'none',
     rowsPerPage: 5,
     rowsPerPageOptions: [5, 10, 20, 30],
   };
@@ -170,7 +170,7 @@ const Productlist = () => {
           }))}
           columns={columns}
           options={options}
-          className="text-sm rtl:text-right text-gray-500 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          // className="text-sm rtl:text-right text-gray-500 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
         />
       </div>
     </div>

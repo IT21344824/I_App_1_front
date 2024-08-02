@@ -98,8 +98,8 @@ const SignIn_comp = () => {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Don't have an account?
-                        <NavLink to={`/register`}>
-                            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign Up </a>
+                        <NavLink to={`/register`} className="ml-2 font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                           Sign Up 
 
                         </NavLink>
                     </p>

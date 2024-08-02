@@ -121,8 +121,8 @@ const Regiser_comp = () => {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         All ready have an account?
-                        <NavLink to={`/SignIn`}>
-                            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign In </a>
+                        <NavLink to={`/SignIn`} className="ml-2 font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                             Sign In 
 
                         </NavLink>
                     </p>
