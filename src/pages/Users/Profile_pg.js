@@ -36,7 +36,7 @@ const Profile_pg = () => {
     }
 
     return (
-        <div className='mt-8'>
+        <div className='mt-8 bg-white dark:bg-gray-800 dark:text-gray-100 dark:h-full'>
             <h1>Profile Page</h1>
             <p>First Name: {user.firstname}</p>
             <p>Last Name: {user.lastname}</p>

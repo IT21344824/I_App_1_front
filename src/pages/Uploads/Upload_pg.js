@@ -49,7 +49,7 @@ const Upload_pg = () => {
     };
 
     return (
-        <div className='mt-5'>
+        <div className='pt-5 bg-white dark:bg-gray-800 dark:text-gray-100 dark:h-full'>
             <div className="flex items-center justify-center p-12">
                 <div className="mx-auto w-full max-w-[550px] bg-white">
                     <form className="py-6 px-9" onSubmit={handleSubmit}>

@@ -14,6 +14,7 @@ import Profile_pg from './pages/Users/Profile_pg';
 
 
 import Uploads_pg from './pages/Uploads/Upload_pg';
+import Home_pg from './pages/Home_PG/Home_pg';
 
 
 // requiring authentication
@@ -50,11 +51,12 @@ function App() {
               <Layout_1 />
             </RequireAuth>
           }>
-            <Route index element={<ProductslistPG />} />
+            <Route index element={<Home_pg />} />
+            <Route path="products" element={<ProductslistPG />} />
             <Route path="profile" element={<Profile_pg />} />
             <Route path="uploads" element={<Uploads_pg />} />
             <Route path="add" element={<AddProdcut_Page />} />
-            <Route path="edit/:id" element={<EditProdcut_Page />} />
+            <Route path="update/:id" element={<EditProdcut_Page />} />
           </Route>
         </Routes>
       </BrowserRouter>
